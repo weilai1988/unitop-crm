@@ -1,10 +1,202 @@
-{{!< default}}
-<div class="container">
-	<div class="jumbotron"><img src="/images/logo.svg" width="160">
-		<h1>Welcome</h1>
-		<p>
-			Remember to <a href='https://github.com/keystonejs/keystone' target='_blank'>Star KeystoneJS on GitHub</a> and
-			<a href='https://twitter.com/keystonejs' target='_blank'>follow @keystonejs</a> on twitter for updates.
-		</p>
+{{!< default}} 
+<div class="row">
+	<div id="profile" class="owl-carousel">
+		<div class="item">
+			<img src="asset/carousel-1.jpg">
+		</div>
+
+		<div class="item">
+			<img src="asset/carousel-2.jpg">
+		</div>
+
+		<div class="item">
+			<img src="asset/carousel-3.jpg">
+		</div>
+
 	</div>
-</div>
+	</div>
+	<script>
+		$(document).ready(function () {
+			$(document).ready(function () {
+				console.log('hello')
+				var owl = $("#profile");
+				owl.owlCarousel({
+					center: true,
+					loop: true,
+					// nav: true,
+					// autoHeight:true,
+					autoHeight: true,
+					items: 1,
+					margin: 10,
+					itemsDesktop: [1000, 1],
+					itemsDesktopSmall: [900, 1],
+					itemsTablet: [600, 1],
+					itemsMobile: false,
+					pagination: true
+				});
+			});
+
+		});
+	</script>
+
+	<br>
+	<br>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h3 class="text-center">
+					最新消息
+				</h3>
+			</div>
+		</div>
+		<br>
+		<div class="row">
+			<div class="col-md-12">
+				<div class="list-group">
+					<a href="#" class="list-group-item active">PTE时讯</a>
+					<div class="list-group-item">
+						【突发】：PTE Voucher 七一开始停止售卖！
+					</div>
+					<div class="list-group-item">
+						【喜讯】PTE成绩正式被工程类职业评估接受！
+
+					</div>
+					<div class="list-group-item">
+						【应对攻略】手里的Voucher怎么办？还能刷考位么？
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<br>
+	<br>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h3 class="text-center">
+					热门课程
+				</h3>
+			</div>
+		</div>
+		<br>
+		<div class="row">
+			<div class="col-md-3">
+				<div class="panel panel-primary">
+					<div class="panel-heading">
+						<h3 class="panel-title">
+							精品保过班
+						</h3>
+					</div>
+					<div class="panel-body">
+						最小班额 极速结课 保质保量 信誉包过
+					</div>
+					<div class="panel-footer">
+						了解更多
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="panel panel-primary">
+					<div class="panel-heading">
+						<h3 class="panel-title">
+							1对1 VIP班
+						</h3>
+					</div>
+					<div class="panel-body">
+						私人订制 直击痛点 名师相助 飞速提分
+					</div>
+					<div class="panel-footer">
+						了解更多
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="panel panel-primary">
+					<div class="panel-heading">
+						<h3 class="panel-title">
+							真题班
+						</h3>
+					</div>
+					<div class="panel-body">
+						真题干货 近期动态 满分答案 考前必备
+					</div>
+					<div class="panel-footer">
+						了解更多
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="panel panel-primary">
+					<div class="panel-heading">
+						<h3 class="panel-title">
+							免费试听
+						</h3>
+					</div>
+					<div class="panel-body">
+						新手入门 快速答疑 成绩分析 学习规划
+					</div>
+					<div class="panel-footer">
+						了解更多
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<br>
+	<br>
+	<div class="row">
+		<div class="col-md-12">
+			<h3 class="text-center">
+				成绩单分享
+			</h3>
+			<br>
+			<div class="row">
+				<div id="results" class="owl-carousel" id="profile">
+					<div class="item owl-height">
+						<img src="asset/student_results/result-1.jpg">
+					</div>
+
+					<div class="item owl-height">
+						<img src="asset/student_results/result-2.jpg">
+					</div>
+
+					<div class="item owl-height">
+						<img src="asset/student_results/result-3.jpg">
+					</div>
+					<div class="item owl-height">
+						<img src="asset/student_results/result-4.jpg">
+					</div>
+
+					<div class="item owl-height">
+						<img src="asset/student_results/result-5.jpg">
+					</div>
+
+					<div class="item owl-height">
+						<img src="asset/student_results/result-6.jpg">
+					</div>
+					<div class="item owl-height">
+						<img src="asset/student_results/result-7.jpg">
+					</div>
+				</div>
+			</div>
+			<script>
+				$(document).ready(function () {
+					$(document).ready(function () {
+						var owl = $("#results");
+						owl.owlCarousel({
+							items: 4,
+							autoHeight: true,
+							itemsDesktop: [1000, 4],
+							itemsDesktopSmall: [900, 3],
+							itemsTablet: [600, 1],
+							itemsMobile: false,
+							pagination: true
+						});
+					});
+
+				});
+			</script>
+
+		</div>
+	</div>

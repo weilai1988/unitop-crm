@@ -1,89 +1,126 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<title>unitop-crm</title>
-		<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-		<link href="/styles/site.css" rel="stylesheet">
 
-		{{!-- This file provides the default styling for the KeystoneJS Content Editor
-			- only renders when user is logged in and admin--}}
-		{{{isAdminEditorCSS user}}}
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>unitop-crm</title>
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+	<link href="/styles/site.css" rel="stylesheet"> 
+	{{{isAdminEditorCSS user}}}
 
-	</head>
-	<body>
-		<div id="header">
-			<div class="container">
-				<div role="navigation" class="navbar navbar-default">
-					<div class="container-fluid">
+</head>
+
+<body>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-12">
+				<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+					<div class="container-fluid" style="box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);">
 						<div class="navbar-header">
-							<button type="button" data-toggle="collapse" data-target=".navbar-collapse" class="navbar-toggle">
+
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+
 								<span class="sr-only">Toggle navigation</span>
-								<span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+
 							</button>
-							<a href="/" class="navbar-brand">unitop-crm</a>
+							<a class="navbar-brand" style="background:#fdfdfd;padding:7px;" href="/">
+								<img src="/images/logo.png" alt="Dispute Bills" style="
+                                height: 51px;
+                                margin-left: 1em;
+                                margin-right: 2em;
+                            ">
+							</a>
 						</div>
-						<div class="collapse navbar-collapse">
+
+						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 							<ul class="nav navbar-nav navbar-left">
-									{{# each navLinks}}
-									<li {{#ifeq ../section key}}class="active"{{else}}{{/ifeq}}>
-										<a href="{{ href }}">{{ label }}</a>
-									</li>
+								{{# each navLinks}}
+								<li {{#ifeq ../section key}}class="active" {{else}}{{/ifeq}}>
+									<a href="{{ href }}">{{ label }}</a>
+								</li>
 								{{/each}}
 							</ul>
-							<ul class="nav navbar-nav navbar-right">
-								{{#if user}}
-								<li><a href="/keystone/signout">Sign Out</a></li>
-								{{else}}
-								<li><a href="/keystone/signin">Sign In</a></li>
-								{{/if}}
-							</ul>
 						</div>
+
 					</div>
-				</div>
+				</nav>
+
 			</div>
 		</div>
-		<div id="body">
-			<!--
-				Flash messages allow you to display once-off status messages to users, e.g. form
-				validation errors, success messages, etc
-			-->
-			{{#if messages}}
-			<div id="flash-messages" class="container">
-				{{#if messages.info}}
-				<div class="alert alert-info">
-						{{{flashMessages messages.info}}}
-				</div>
-				{{/if}}
-				{{#if messages.success}}
-				<div class="alert alert-success">
-						{{{flashMessages messages.success}}}
-				</div>
-				{{/if}}
-				{{#if messages.warning}}
-				<div class="alert alert-warning">
-						{{{flashMessages messages.warning}}}
-				</div>
-				{{/if}}
-				{{#if messages.error}}
-				<div class="alert alert-danger">
-						{{{flashMessages messages.error}}}
-				</div>
-				{{/if}}
-			</div>
-			{{/if}}
-			<!-- The content block should contain the body of your template's content-->
-			{{{body}}}
-		</div>
+	</div>
+
+{{{body}}}
+
+	<footer id="myFooter">
 		<div class="container">
-			<div id="footer">
-				<p>Powered by <a href="http://keystonejs.com" target="_blank">KeystoneJS</a>.</p>
+			<div class="row">
+				<div class="col-sm-3">
+					<h2 class="logo">
+						<a href="#">
+							<img src="/images/logo.png" alt="" width="200" style="margin-top:30px">
+						</a>
+					</h2>
+				</div>
+				<div class="col-sm-2">
+					<h5>课程设置</h5>
+					<ul>
+						<li>
+							<a href="#">课程1</a>
+						</li>
+						<li>
+							<a href="#">课程2</a>
+						</li>
+						<li>
+							<a href="#">课程3</a>
+						</li>
+						<li>
+							<a href="#">课程4</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-sm-2">
+					<h5>资料分享</h5>
+					<ul>
+						<li>
+							<a href="#">PTE技巧</a>
+						</li>
+						<li>
+							<a href="#">PTE真题</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-sm-2">
+					<h5>联系我们</h5>
+					<ul>
+						<li>
+							<a href="#">Email : xxx@xxx.xxxx</a>
+						</li>
+						<li>
+							<a href="#">Phone: 02 1234 1234</a>
+						</li>
+						<li>
+							<a href="#">Address : 11 AAA. St. NSW. 1234 </a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-sm-3">
+					<img src="/images/marketing.jpg" alt="" height="140" width="140" style="margin-top:30px">
+				</div>
 			</div>
 		</div>
-		<script src="/js/jquery/jquery-2.1.4.min.js"></script>
-		<script src="/js/bootstrap/bootstrap-3.3.5.min.js"></script>
-		{{{isAdminEditorJS user}}}
-	</body>
+		<div class="footer-copyright">
+			<p>© 2016 Copyright Text </p>
+		</div>
+		
+	</footer>
+
+	<script src="/js/jquery/jquery-2.1.4.min.js"></script>
+	<script src="/js/bootstrap/bootstrap-3.3.5.min.js"></script> {{{isAdminEditorJS user}}}
+</body>
+
 </html>

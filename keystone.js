@@ -33,8 +33,20 @@ keystone.init({
 	'auth': true,
 	'user model': 'User',
 
-        // Web Server Options
-        'port': 80,
+	// Web Server Options
+	'port': 8080,
+
+	'cloudinary config': { 
+		cloud_name: 'tonysickpony', 
+		api_key: '145547395321675', 
+		api_secret: 'o5iGLSl8EQ3wPuiMOB6wVfv4rns' 
+	},
+
+	'cookie secret': 'unitop',
+
+	'mongo': 'mongodb://unitoppte.com.au/unitop-crm'
+
+
 });
 
 // Load your project's Models

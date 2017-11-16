@@ -1,0 +1,107 @@
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class="text-center text-primary">
+                    在线表单
+                </h3>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <form role="form">
+            <div class="form-group">
+                <label for="name">姓名</label>
+                <input type="text" class="form-control" id="name">
+            </div>
+            <div class="form-group">
+                <label for="email">邮箱</label>
+                <input type="email" class="form-control" id="email">
+            </div>
+            <div class="form-group">
+                <label for="phone">电话</label>
+                <input type="email" class="form-control" id="phone">
+            </div>
+            <div class="form-group">
+                <label for="tookPTE">近两年是否参加过任何语言类考试?</label>
+                <br>
+                <div class="radio-inline" onclick="showExamDetail()">
+                    <label>
+                        <input type="radio" name="optionsRadios" id="tookPTE" value="yes" checked> 是
+                    </label>
+                </div>
+                <div class="radio-inline" onclick="hideExamDetail()">
+                    <label>
+                        <input type="radio" name="optionsRadios" id="tookPTE" value="no" checked> 否
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-group exam-type" style="display:none">
+                <label for="name">考试类别</label>
+                <input type="text" class="form-control">
+            </div>
+
+            <div class="form-group exam-result" style="display:none">
+                <label for="examType">各项成绩</label>
+                <br>
+                <label>听
+                    <input type="text" style="margin-left:10px">
+                </label>
+                <label>说
+                    <input type="text" style="margin-left:10px">
+                </label>
+                <label>读
+                    <input type="text" style="margin-left:10px">
+                </label>
+                <label>写
+                    <input type="text" style="margin-left:10px">
+                </label>
+            </div>
+            <div class="form-group">
+                <label for="expect">目标分数</label>
+                <br>
+                <div class="radio-inline" style="margin-left:0;margin-right:10px">
+                    <label>
+                        <input type="radio" name="optionsRadios" id="expect" value="30" checked> 30（雅思4.5）
+                    </label>
+                </div>
+                <div class="radio-inline" style="margin-left:0;margin-right:10px">
+                    <label>
+                        <input type="radio" name="optionsRadios" id="expect" value="50" checked> 50（雅思6）
+                    </label>
+                </div>
+                <div class="radio-inline" style="margin-left:0;margin-right:10px">
+                    <label>
+                        <input type="radio" name="optionsRadios" id="expect" value="50" checked> 58（雅思6.5）
+                    </label>
+                </div>
+                <div class="radio-inline" style="margin-left:0;margin-right:10px">
+                    <label>
+                        <input type="radio" name="optionsRadios" id="expect" value="65" checked> 65（雅思7）
+                    </label>
+                </div>
+                <div class="radio-inline" style="margin-left:0;margin-right:10px">
+                    <label>
+                        <input type="radio" name="optionsRadios" id="expect" value="79" checked> 79（雅思8）
+                    </label>
+                </div>
+                <div class="radio-inline" style="margin-left:0;margin-right:10px">
+                    <label>
+                        <input type="radio" name="optionsRadios" id="expect" value="79" checked> 79（雅思8）
+                    </label>
+                </div>
+                <div class="radio-inline" style="margin-left:0;margin-right:10px">
+                    <label>
+                        <input type="radio" name="optionsRadios" id="expect" value="79" checked> 其他
+                        <input style="margin-left:10px" type="text">
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="tookPTE">备注</label>
+                <textarea class="form-control" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+    </div>

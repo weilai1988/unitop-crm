@@ -19,9 +19,13 @@ var _ = require('lodash');
 */
 exports.initLocals = function (req, res, next) {
 	res.locals.navLinks = [
-		{ label: 'Home', key: 'home', href: '/' },
-		{ label: 'Gallery', key: 'gallery', href: '/gallery' },
-		{ label: 'Contact', key: 'contact', href: '/contact' },
+		// { label: 'Home', key: 'home', href: '/' },
+		// { label: 'Gallery', key: 'gallery', href: '/gallery' },
+		{ label: '关于我们', key: 'about', href: '/about' },
+		{ label: '联系我们', key: 'contact', href: '/contact' },
+		{ label: '课程设置', key: 'course', href: '/course' },
+		{ label: '资料分享', key: 'resource', href: '/resource' },
+		{ label: '在线表单', key: 'enroll', href: '/enroll' },
 	];
 	res.locals.user = req.user;
 	next();

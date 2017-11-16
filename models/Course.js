@@ -14,7 +14,8 @@ var Course = new keystone.List('Course', {
 });
 
 Course.add({
-	name: { type: String, required: true },
+        name: { type: String, required: true },
+        summary: {  type: String },
         description: { type: Types.Html, wysiwyg: true, height: 400 },
         createdAt: { type: Date, default: Date.now }
 });
