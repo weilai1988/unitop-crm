@@ -81,66 +81,26 @@
 		</div>
 		<br>
 		<div class="row">
+			
+			{{#each courses}}
+				
 			<div class="col-md-3">
 				<div class="panel panel-primary">
 					<div class="panel-heading">
 						<h3 class="panel-title">
-							精品保过班
+							{{ name }}
 						</h3>
 					</div>
 					<div class="panel-body">
-						最小班额 极速结课 保质保量 信誉包过
+						{{ summary }}
 					</div>
 					<div class="panel-footer">
 						了解更多
 					</div>
 				</div>
 			</div>
-			<div class="col-md-3">
-				<div class="panel panel-primary">
-					<div class="panel-heading">
-						<h3 class="panel-title">
-							1对1 VIP班
-						</h3>
-					</div>
-					<div class="panel-body">
-						私人订制 直击痛点 名师相助 飞速提分
-					</div>
-					<div class="panel-footer">
-						了解更多
-					</div>
-				</div>
-			</div>
-			<div class="col-md-3">
-				<div class="panel panel-primary">
-					<div class="panel-heading">
-						<h3 class="panel-title">
-							真题班
-						</h3>
-					</div>
-					<div class="panel-body">
-						真题干货 近期动态 满分答案 考前必备
-					</div>
-					<div class="panel-footer">
-						了解更多
-					</div>
-				</div>
-			</div>
-			<div class="col-md-3">
-				<div class="panel panel-primary">
-					<div class="panel-heading">
-						<h3 class="panel-title">
-							免费试听
-						</h3>
-					</div>
-					<div class="panel-body">
-						新手入门 快速答疑 成绩分析 学习规划
-					</div>
-					<div class="panel-footer">
-						了解更多
-					</div>
-				</div>
-			</div>
+			{{/each}}
+
 		</div>
 	</div>
 	<br>

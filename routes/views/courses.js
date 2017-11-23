@@ -8,7 +8,7 @@ exports = module.exports = function (req, res) {
 
 	// locals.section is used to set the currently selected
 	// item in the header navigation.
-	locals.section = 'home';
+	locals.section = 'courses';
 
 	view.on('init', function (next) {
 		Course.model.find().exec(function (err, results) {
@@ -17,10 +17,10 @@ exports = module.exports = function (req, res) {
 			}
 
 			locals.courses = results;
-			next();
+			next()
 		})
 	});
 
 	// Render the view
-	view.render('index');
+	view.render('courses');
 };

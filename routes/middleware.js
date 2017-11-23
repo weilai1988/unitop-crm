@@ -23,7 +23,7 @@ exports.initLocals = function (req, res, next) {
 		// { label: 'Gallery', key: 'gallery', href: '/gallery' },
 		{ label: '关于我们', key: 'about', href: '/about' },
 		{ label: '联系我们', key: 'contact', href: '/contact' },
-		{ label: '课程设置', key: 'course', href: '/course' },
+		{ label: '课程设置', key: 'courses', href: '/courses' },
 		{ label: '资料分享', key: 'resource', href: '/resource' },
 		{ label: '在线表单', key: 'enroll', href: '/enroll' },
 	];
