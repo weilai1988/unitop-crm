@@ -7,6 +7,7 @@ var Types = keystone.Field.Types;
  */
 
 var Newscast = new keystone.List('Newscast', {
+        autokey: { from: '_id', path: 'key', unique: true },
 	nocreate: false,
 	noedit: false,
         nodelete: false,

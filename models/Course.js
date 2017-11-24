@@ -7,6 +7,7 @@ var Types = keystone.Field.Types;
  */
 
 var Course = new keystone.List('Course', {
+        autokey: { from: '_id', path: 'key', unique: true },
 	nocreate: false,
 	noedit: false,
         nodelete: false,

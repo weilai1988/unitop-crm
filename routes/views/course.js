@@ -12,17 +12,13 @@ exports = module.exports = function (req, res) {
 	locals.filters = {
 		course: req.params.course,
 	};
-
+    console.log(locals.filters.course)
 	view.on('init', function (next) {
 		Course.model.findOne({
             key: locals.filters.course,
-        }).exec(function (err, results) {
-			if (err || !results.length) {
-				return next(err);
-			}
-
+        }).exec(function (err, result) {
 			locals.course = result;
-			next()
+			next(err);
 		})
 	});
 
