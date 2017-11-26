@@ -1,5 +1,5 @@
 var keystone = require('keystone');
-var Course = keystone.list('Course');
+var Course = keystone.list('Material');
 
 exports = module.exports = function (req, res) {
 
@@ -8,20 +8,20 @@ exports = module.exports = function (req, res) {
 
 	// locals.section is used to set the currently selected
 	// item in the header navigation.
-    locals.section = 'courses';
+    locals.section = 'material';
 	locals.filters = {
-		course: req.params.course,
+		material: req.params.material,
 	};
 
 	view.on('init', function (next) {
 		Course.model.findOne({
-            key: locals.filters.course,
+            key: locals.filters.material,
         }).exec(function (err, result) {
-			locals.course = result;
+			locals.material = result;
 			next(err);
 		})
 	});
 
 	// Render the view
-	view.render('course');
+	view.render('material');
 };
