@@ -24,24 +24,24 @@
             <div class="form-group">
                 <label for="tookPTE">近两年是否参加过任何语言类考试?</label>
                 <br>
-                <div class="radio-inline" onclick="showExamDetail()">
+                <div class="radio-inline">
                     <label>
                         <input type="radio" name="optionsRadios" id="tookPTE" value="yes" checked> 是
                     </label>
                 </div>
-                <div class="radio-inline" onclick="hideExamDetail()">
+                <div class="radio-inline">
                     <label>
                         <input type="radio" name="optionsRadios" id="tookPTE" value="no" checked> 否
                     </label>
                 </div>
             </div>
 
-            <div class="form-group exam-type" style="display:none">
+            <div class="form-group exam-type">
                 <label for="name">考试类别</label>
                 <input type="text" class="form-control">
             </div>
 
-            <div class="form-group exam-result" style="display:none">
+            <div class="form-group exam-result">
                 <label for="examType">各项成绩</label>
                 <br>
                 <label>听
@@ -92,13 +92,15 @@
                 </div>
                 <div class="radio-inline" style="margin-left:0;margin-right:10px">
                     <label>
-                        <input type="radio" name="optionsRadios" id="expect" value="79" checked> 其他
-                        <input style="margin-left:10px" type="text">
+                        <input type="radio" name="optionsRadios" id="expect" value="79" checked>其他
+                        <div class="form-group goal-radia-button-other">
+                            <input type="email" class="form-control" id="phone">
+                        </div>
                     </label>
                 </div>
             </div>
 
-            <div class="form-group">
+            <div class="form-group" >
                 <label for="tookPTE">备注</label>
                 <textarea class="form-control" rows="3"></textarea>
             </div>
