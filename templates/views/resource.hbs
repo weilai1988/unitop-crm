@@ -1,74 +1,74 @@
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <h3 class="text-center text-primary">
-                    资料分享
-                </h3>
-                <div class="tabbable" id="tabs-275238">
-                    <ul class="nav nav-tabs">
-                        <li class="active">
-                            <a href="#panel-629739" data-toggle="tab">学习资料
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#panel-302822" data-toggle="tab">经验分享</a>
-                        </li>
-                    </ul>
-                    <div class="tab-content">
-                        <div class="tab-pane active" id="panel-629739">
-                            <!--  -->
+<div class="container unitop-container">
+    <div class="row">
+        <div class="col-md-12">
+            <h3 class="text-center text-primary">
+                资料分享
+            </h3>
+            <div class="tabbable" id="tabs-275238">
+                <ul class="nav nav-tabs">
+                    <li class="active">
+                        <a href="#panel-629739" data-toggle="tab">学习资料
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#panel-302822" data-toggle="tab">经验分享</a>
+                    </li>
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-pane active" id="panel-629739">
+                        <!--  -->
 
-                            <div class="row">
-                                {{#each materials}}
-                                <div class="col-md-4">
-                                    <div class="thumbnail">
-                                        <img alt="Bootstrap Thumbnail First" src="http://placehold.it/600x200" />
-                                        <div class="caption">
-                                            <h3>
-                                                {{ title }}
-                                            </h3>
-                                            <p>
-                                                {{{ description }}}
-                                            </p>
-                                            <p>
-                                                <a class="btn btn-primary" href="/material/{{ key }}">Action</a>
-                                            </p>
-                                        </div>
+                        <div class="row">
+                            {{#each materials}}
+                            <div class="col-md-4">
+                                <div class="thumbnail">
+                                    <img alt="Bootstrap Thumbnail First" src="http://placehold.it/600x200" />
+                                    <div class="caption">
+                                        <h3>
+                                            {{ title }}
+                                        </h3>
+                                        <p>
+                                            {{{ description }}}
+                                        </p>
+                                        <p>
+                                            <a class="btn btn-primary" href="/material/{{ key }}">Action</a>
+                                        </p>
                                     </div>
                                 </div>
-                                {{/each}}
                             </div>
-
-
-                            <!--  -->
+                            {{/each}}
                         </div>
-                        <div class="tab-pane" id="panel-302822">
-                            <!--  -->
 
-                            <div class="row">
-                                {{#each experiences}}
-                                <div class="col-md-4">
-                                    <div class="thumbnail">
-                                        <img alt="Bootstrap Thumbnail First" src="http://placehold.it/600x200" />
-                                        <div class="caption">
-                                            <h3>
-                                                {{ title }}
-                                            </h3>
-                                            <p>
-                                                {{{ description }}}
-                                            </p>
-                                            <p>
-                                                <a class="btn btn-primary" href="/experience/{{ key }}">Action</a>
-                                            </p>
-                                        </div>
+
+                        <!--  -->
+                    </div>
+                    <div class="tab-pane" id="panel-302822">
+                        <!--  -->
+
+                        <div class="row">
+                            {{#each experiences}}
+                            <div class="col-md-4">
+                                <div class="thumbnail">
+                                    <img alt="Bootstrap Thumbnail First" src="http://placehold.it/600x200" />
+                                    <div class="caption">
+                                        <h3>
+                                            {{ title }}
+                                        </h3>
+                                        <p>
+                                            {{{ description }}}
+                                        </p>
+                                        <p>
+                                            <a class="btn btn-primary" href="/experience/{{ key }}">Action</a>
+                                        </p>
                                     </div>
                                 </div>
-                                {{/each}} 
                             </div>
-
+                            {{/each}}
                         </div>
+
                     </div>
                 </div>
             </div>
         </div>
     </div>
+</div>

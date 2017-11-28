@@ -131,6 +131,8 @@
 //     -webkit-flex: 0 0 auto;
 // }
 
+
+//form
 .goal-radia-button-other {
 	display: inline-block;
 	vertical-align: top;
@@ -142,6 +144,18 @@
 	input {
 		height: 27px;
 	}
-	// height: 54px;
-    // vertical-align: baseline;
+}
+
+.recent-test-section {
+    input {
+        display: inline-block;
+        width: auto;
+        margin-left: 5px;
+    }
+}
+//form end
+
+.unitop-container {
+    margin-top: 8rem;
+    margin-bottom: 8rem;
 }
