@@ -20,16 +20,13 @@
 		<div class="col-md-12">
 			<div class="list-group">
 				<a href="#" class="list-group-item active">PTE时讯</a>
+				{{#each newscasts}}
 				<div class="list-group-item">
-					【突发】：PTE Voucher 七一开始停止售卖！
+					<a href="/newscast/{{ key }}">
+						{{ name }}
+					</a>
 				</div>
-				<div class="list-group-item">
-					【喜讯】PTE成绩正式被工程类职业评估接受！
-
-				</div>
-				<div class="list-group-item">
-					【应对攻略】手里的Voucher怎么办？还能刷考位么？
-				</div>
+				{{/each}}
 			</div>
 		</div>
 	</div>
