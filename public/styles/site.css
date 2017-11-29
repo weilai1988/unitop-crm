@@ -5926,3 +5926,27 @@ button.close {
 .unitop-container {
   margin-top: 8rem;
   margin-bottom: 8rem; }
+
+.heading-font {
+  font-size: 24px;
+  font-weight: 700; }
+
+.body-font {
+  color: #666;
+  font-size: 16px; }
+
+.list-group > li > p > strong > span {
+  color: #666 !important;
+  font-size: 16px !important; }
+
+.list-group > li > p {
+  color: #666 !important;
+  font-size: 14px !important; }
+
+.list-group > li > p > span {
+  color: #666 !important;
+  font-size: 14px !important; }
+
+.list-group > li > ul > li {
+  color: #666 !important;
+  font-size: 14px !important; }
