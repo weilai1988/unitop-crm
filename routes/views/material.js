@@ -8,7 +8,7 @@ exports = module.exports = function (req, res) {
 
 	// locals.section is used to set the currently selected
 	// item in the header navigation.
-    locals.section = 'material';
+    locals.section = 'resource';
 	locals.filters = {
 		material: req.params.material,
 	};

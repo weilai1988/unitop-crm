@@ -1,0 +1,27 @@
+.student-marks-carousel {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.student-marks-carousel img {
+    display: block;
+    height: 200px;
+    margin-right: 10px;
+    @media screen and ( min-width: 768px ) {
+        height: 400px;
+    }
+}
+
+.main-carousel {
+	margin-bottom: 3rem;
+}
+
+.main-carousel img {
+  display: block;
+  height: 500px;
+  @media screen and ( min-width: 768px ) {
+      height: 400px;
+  }
+}
+
+

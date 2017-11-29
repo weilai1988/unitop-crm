@@ -1,5 +1,13 @@
 {{!< default}} 
+<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css"></default>
 <div class="container unitop-container">
+
+	<div class="main-carousel" data-flickity='{ "imagesLoaded": true, "wrapAround": true}'>
+		<img src="/images/carousel-1.jpg" alt="orange tree" />
+		<img src="/images/carousel-2.jpg" alt="orange tree" />
+		<img src="/images/carousel-3.jpg" alt="orange tree" />
+	</div>
+
 	<div class="row">
 		<div class="col-md-12">
 			<h3 class="text-center">
@@ -62,54 +70,16 @@
 			<h3 class="text-center">
 				成绩单分享
 			</h3>
-			<br>
-			<div class="row">
-				<div id="results" class="owl-carousel" id="profile">
-					<div class="item owl-height">
-						<img src="asset/student_results/result-1.jpg">
-					</div>
-
-					<div class="item owl-height">
-						<img src="asset/student_results/result-2.jpg">
-					</div>
-
-					<div class="item owl-height">
-						<img src="asset/student_results/result-3.jpg">
-					</div>
-					<div class="item owl-height">
-						<img src="asset/student_results/result-4.jpg">
-					</div>
-
-					<div class="item owl-height">
-						<img src="asset/student_results/result-5.jpg">
-					</div>
-
-					<div class="item owl-height">
-						<img src="asset/student_results/result-6.jpg">
-					</div>
-					<div class="item owl-height">
-						<img src="asset/student_results/result-7.jpg">
-					</div>
-				</div>
+			<div class="student-marks-carousel" data-flickity='{ "imagesLoaded": true, "wrapAround": true}'>
+				<img src="/images/student_results/result-1.jpg"/>
+				<img src="/images/student_results/result-2.jpg"/>
+				<img src="/images/student_results/result-3.jpg"/>
+				<img src="/images/student_results/result-4.jpg"/>
+				<img src="/images/student_results/result-5.jpg"/>
+				<img src="/images/student_results/result-6.jpg"/>
+				<img src="/images/student_results/result-7.jpg"/>
 			</div>
-			<script>
-				$(document).ready(function () {
-					$(document).ready(function () {
-						var owl = $("#results");
-						owl.owlCarousel({
-							items: 4,
-							autoHeight: true,
-							itemsDesktop: [1000, 4],
-							itemsDesktopSmall: [900, 3],
-							itemsTablet: [600, 1],
-							itemsMobile: false,
-							pagination: true
-						});
-					});
-
-				});
-			</script>
 
 		</div>
 	</div>
-	</div>
+</div>

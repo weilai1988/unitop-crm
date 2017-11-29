@@ -8,7 +8,7 @@ exports = module.exports = function (req, res) {
 
 	// locals.section is used to set the currently selected
 	// item in the header navigation.
-    locals.section = 'experience';
+    locals.section = 'resource';
 	locals.filters = {
 		experience: req.params.experience,
 	};

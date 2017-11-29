@@ -7,117 +7,124 @@
         </div>
     </div>
 
-    <form role="form">
-        <div class="form-group">
+    {{#if enrolmentSubmitted}}
+    <div class="alert alert-success" role="alert">Thank you for choosing Unitop PTE. Your information has been successfully submitted.</div>
+    {{else}}
+    <form role="form" method="post">
+        <input type="hidden" name="action" value="enroll">
+        <div class="form-group  {{#if validationErrors.name}}has-error{{/if}}">
             <label for="name">姓名</label>
-            <input type="text" class="form-control" id="name">
+            <input type="text" name="name" class="form-control" id="name" value="{{formData.name}}">
         </div>
-        <div class="form-group">
+        <div class="form-group {{#if validationErrors.email}}has-error{{/if}}">
             <label for="email">邮箱</label>
-            <input type="email" class="form-control" id="email">
+            <input type="email" name="email" class="form-control" id="email" value="{{formData.email}}">
         </div>
-        <div class="form-group">
+        <div class="form-group {{#if validationErrors.phone}}has-error{{/if}}">
             <label for="phone">电话</label>
-            <input type="email" class="form-control" id="phone">
+            <input type="text" name="phone" class="form-control" id="phone" value="{{formData.phone}}">
         </div>
         <div class="form-group">
-            <label for="tookPTE">近两年是否参加过任何语言类考试?</label>
+            <label for="recent-test">近两年是否参加过任何语言类考试?</label>
             <br>
             <div class="radio-inline">
                 <label>
-                    <input type="radio" name="optionsRadios" id="tookPTE" value="yes" checked> 是
+                    <input type="radio" name="recentTest" value=true checked> 是
                 </label>
             </div>
             <div class="radio-inline">
                 <label>
-                    <input type="radio" name="optionsRadios" id="tookPTE" value="no" checked> 否
+                    <input type="radio" name="recentTest" value=false checked> 否
                 </label>
             </div>
         </div>
 
-        <div class="form-group exam-type">
-            <label for="name">考试类别</label>
-            <input type="text" class="form-control">
-        </div>
+        <div class="recent-test-details" style="display:none">
+            <div class="form-group exam-type">
+                <label for="recent-test-type">考试类别</label>
+                <input type="text" name="recentTestType" class="form-control" id="recent-test-type">
+            </div>
 
-        <label for="examType">各项成绩</label>
-        <br>
-        <div class="row">
-            <div class="col-md-3">
-                <div class="form-group recent-test-section">
-                    <label for="name">听</label>
-                    <input type="text" class="form-control">
+            <label for="examType">各项成绩</label>
+            <br>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="form-group recent-test-section">
+                        <label for="recent-type-section-listening">听</label>
+                        <input type="text" name="recentTestResult.listening" class="form-control" id="recent-type-section-listening">
+                    </div>
                 </div>
-            </div>
-            <div class="col-md-3">
-                <div class="form-group recent-test-section">
-                    <label for="name">说</label>
-                    <input type="text" class="form-control">
+                <div class="col-md-3">
+                    <div class="form-group recent-test-section">
+                        <label for="recent-type-section-speaking">说</label>
+                        <input type="text" name="recentTestResult.speaking" class="form-control" id="recent-type-section-speaking">
+                    </div>
                 </div>
-            </div>
-            <div class="col-md-3">
-                <div class="form-group recent-test-section">
-                    <label for="name">读</label>
-                    <input type="text" class="form-control">
+                <div class="col-md-3">
+                    <div class="form-group recent-test-section">
+                        <label for="recent-type-section-reading">读</label>
+                        <input type="text" name="recentTestResult.reading" class="form-control" id="recent-type-section-reading">
+                    </div>
                 </div>
-            </div>
-            <div class="col-md-3">
-                <div class="form-group recent-test-section">
-                    <label for="name">写</label>
-                    <input type="text" class="form-control">
+                <div class="col-md-3">
+                    <div class="form-group recent-test-section">
+                        <label for="recent-type-section-writing">写</label>
+                        <input type="text" name="recentTestResult.writing" class="form-control" id="recent-type-section-writing"> 
+                    </div>
                 </div>
             </div>
         </div>
-
 
 
         <div class="form-group">
-            <label for="expect">目标分数</label>
+            <label for="goal">目标分数</label>
             <br>
             <div class="radio-inline" style="margin-left:0;margin-right:10px">
                 <label>
-                    <input type="radio" name="optionsRadios" id="expect" value="30" checked> 30（雅思4.5）
+                    <input type="radio" name="goal" value="30" checked> 30（雅思4.5）
                 </label>
             </div>
             <div class="radio-inline" style="margin-left:0;margin-right:10px">
                 <label>
-                    <input type="radio" name="optionsRadios" id="expect" value="50" checked> 50（雅思6）
+                    <input type="radio" name="goal" value="50" checked> 50（雅思6）
                 </label>
             </div>
             <div class="radio-inline" style="margin-left:0;margin-right:10px">
                 <label>
-                    <input type="radio" name="optionsRadios" id="expect" value="50" checked> 58（雅思6.5）
+                    <input type="radio" name="goal" value="50" checked> 58（雅思6.5）
                 </label>
             </div>
             <div class="radio-inline" style="margin-left:0;margin-right:10px">
                 <label>
-                    <input type="radio" name="optionsRadios" id="expect" value="65" checked> 65（雅思7）
+                    <input type="radio" name="goal" value="65" checked> 65（雅思7）
                 </label>
             </div>
             <div class="radio-inline" style="margin-left:0;margin-right:10px">
                 <label>
-                    <input type="radio" name="optionsRadios" id="expect" value="79" checked> 79（雅思8）
+                    <input type="radio" name="goal" value="79" checked> 79（雅思8）
                 </label>
             </div>
             <div class="radio-inline" style="margin-left:0;margin-right:10px">
                 <label>
-                    <input type="radio" name="optionsRadios" id="expect" value="79" checked> 79（雅思8）
+                    <input type="radio" name="goal" value="79" checked> 79（雅思8）
                 </label>
             </div>
             <div class="radio-inline" style="margin-left:0;margin-right:10px">
                 <label>
-                    <input type="radio" name="optionsRadios" id="expect" value="79" checked>其他
+                    <input type="radio" name="goal" value="others" checked>其他
                     <div class="form-group goal-radia-button-other">
-                        <input type="email" class="form-control" id="phone">
+                        <input type="text" class="form-control">
                     </div>
                 </label>
             </div>
         </div>
 
         <div class="form-group">
-            <label for="tookPTE">备注</label>
-            <textarea class="form-control" rows="3"></textarea>
+            <label for="additional-information">备注</label>
+            <textarea class="form-control" rows="3" name="addtionalInformation" id="additional-information"></textarea>
         </div>
         <button type="submit" class="btn btn-default">Submit</button>
     </form>
+    {{/if}}
+
 </div>
