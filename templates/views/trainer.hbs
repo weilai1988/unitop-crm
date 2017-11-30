@@ -1,0 +1,20 @@
+<div class="container unitop-container">
+    <div class="panel panel-default">
+
+    <!-- Default panel contents -->
+        <div class="panel-heading heading-font">
+            {{ trainer.name }}
+        </div>
+
+        <div class="panel-body body-font">
+            <img height="100" width="100" src="{{ trainer.avatar.secure_url }}" class="media-object" />
+        </div>
+
+    <!-- List group -->
+        <ul class="list-group">
+            <li class="list-group-item">
+                {{{ trainer.description }}}
+            </li>
+        </ul>
+    </div>
+</div>
