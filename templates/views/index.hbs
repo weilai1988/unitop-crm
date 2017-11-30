@@ -3,9 +3,9 @@
 <div class="container unitop-container">
 
 	<div class="main-carousel" data-flickity='{ "imagesLoaded": true, "wrapAround": true}'>
-		<img src="/images/carousel-1.jpg" alt="orange tree" />
-		<img src="/images/carousel-2.jpg" alt="orange tree" />
-		<img src="/images/carousel-3.jpg" alt="orange tree" />
+		<img src="/images/carousel-1.jpg" />
+		<img src="/images/carousel-2.jpg" />
+		<img src="/images/carousel-3.jpg" />
 	</div>
 
 	<div class="row">
@@ -23,14 +23,13 @@
 				{{#each newscasts}}
 				<div class="list-group-item">
 					<a href="/newscast/{{ key }}">
-						{{ name }}
+						{{ title }}
 					</a>
 				</div>
 				{{/each}}
 			</div>
 		</div>
 	</div>
-
 	<div class="row">
 		<div class="col-md-12">
 			<h3 class="text-center">
@@ -42,7 +41,6 @@
 	<div class="row">
 
 		{{#each courses}}
-
 		<div class="col-md-3">
 			<div class="panel panel-primary">
 				<div class="panel-heading">
@@ -76,7 +74,6 @@
 				<img src="/images/student_results/result-6.jpg"/>
 				<img src="/images/student_results/result-7.jpg"/>
 			</div>
-
 		</div>
 	</div>
 </div>

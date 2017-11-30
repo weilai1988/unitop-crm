@@ -15,12 +15,13 @@ var Material = new keystone.List('Material', {
 });
 
 Material.add({
-    title: { type: String },
+    title: { type: String, required: true, initial: true },
     featuredImage: { type: Types.CloudinaryImage },
-    description: { type: Types.Html, wysiwyg: true, height: 400 },
+    summary: {type: Types.Textarea, },
+    content: { type: Types.Html, wysiwyg: true, height: 400 },
     createdAt: { type: Date, default: Date.now }
 });
 
 Material.defaultSort = '-createdAt';
-Material.defaultColumns = 'title, description, createdAt';
+Material.defaultColumns = 'title, summary, createdAt';
 Material.register();

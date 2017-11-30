@@ -15,12 +15,13 @@ var Experience = new keystone.List('Experience', {
 });
 
 Experience.add({
-    title: { type: String },
+    title: { type: String, required: true, initial: true },
     featuredImage: { type: Types.CloudinaryImage },
-    description: { type: Types.Html, wysiwyg: true, height: 400 },
+    summary: {type: Types.Textarea, },
+    content: { type: Types.Html, wysiwyg: true, height: 400 },
     createdAt: { type: Date, default: Date.now }
 });
 
 Experience.defaultSort = '-createdAt';
-Experience.defaultColumns = 'title, description, createdAt';
+Experience.defaultColumns = 'title, summary, createdAt';
 Experience.register();

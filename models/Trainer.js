@@ -15,12 +15,13 @@ var Trainer = new keystone.List('Trainer', {
 });
 
 Trainer.add({
-	name: { type: Types.Name, required: true },
+	name: { type: String, required: true },
         avatar: { type: Types.CloudinaryImage },
+        summary: {type: Types.Textarea },
         description: { type: Types.Html, wysiwyg: true, height: 400 },
         createdAt: { type: Date, default: Date.now }
 });
 
 Trainer.defaultSort = '-createdAt';
-Trainer.defaultColumns = 'name, avatar, description, createdAt';
+Trainer.defaultColumns = 'name, avatar, summary, createdAt';
 Trainer.register();

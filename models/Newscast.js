@@ -15,11 +15,12 @@ var Newscast = new keystone.List('Newscast', {
 });
 
 Newscast.add({
-    name: { type: String, required: true },
-    description: { type: Types.Html, wysiwyg: true, height: 400 },
+    title: { type: String, required: true, initial: true},
+    summary: {type: Types.Textarea },
+    content: { type: Types.Html, wysiwyg: true, height: 400 },
     createdAt: { type: Date, default: Date.now }
 });
 
 Newscast.defaultSort = '-createdAt';
-Newscast.defaultColumns = 'name, description, createdAt';
+Newscast.defaultColumns = 'title, description, createdAt';
 Newscast.register();
