@@ -11,7 +11,8 @@ var Course = new keystone.List('Course', {
 	nocreate: false,
 	noedit: false,
         nodelete: false,
-        hidden: false
+        hidden: false,
+        label: '课程设置'
 });
 
 Course.add({

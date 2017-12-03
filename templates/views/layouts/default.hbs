@@ -7,11 +7,10 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>unitop-crm</title>
 	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-    <!--     Fonts and icons     -->
-    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-	 <link href="/styles/ct-paper.css" rel="stylesheet"/>      
-	<link href="/styles/site.css" rel="stylesheet"> 
-	{{{isAdminEditorCSS user}}}
+	<!--     Fonts and icons     -->
+	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href="/styles/site.css" rel="stylesheet">
+	<link href="/styles/ct-paper.css" rel="stylesheet" /> {{{isAdminEditorCSS user}}}
 
 </head>
 
@@ -30,8 +29,8 @@
 
 				</button>
 				<a class="navbar-brand" style="padding:6px;" href="/">
-					<img src="/images/logo.png" alt="Dispute Bills" style="
-					height: 39px;
+					<img src="/images/logo.png" alt="Unitop PTE" style="
+					height: 50px;
 					margin-left: 1rem;
 					margin-right: 1rem;
 				">
@@ -42,7 +41,9 @@
 				<ul class="nav navbar-nav navbar-left">
 					{{# each navLinks}}
 					<li {{#ifeq ../section key}}class="active" {{else}}{{/ifeq}}>
-						<a href="{{ href }}">{{ label }}</a>
+						<a href="{{ href }}">
+							<b>{{ label }}</b>
+						</a>
 					</li>
 					{{/each}}
 				</ul>
@@ -53,7 +54,7 @@
 
 
 
-{{{body}}}
+	{{{body}}}
 
 	<footer id="myFooter">
 		<div class="container">
@@ -66,38 +67,50 @@
 					</h2>
 				</div>
 				<div class="col-sm-2">
-					<h5>课程设置</h5>
+					<h5>
+						网站导航
+					</h5>
 					<ul>
 						<li>
-							<a href="#">课程1</a>
+							<a href="/">回到主页</a>
 						</li>
 						<li>
-							<a href="#">课程2</a>
+							<a href="/about">关于我们</a>
 						</li>
 						<li>
-							<a href="#">课程3</a>
+							<a href="/contact">联系我们</a>
 						</li>
 						<li>
-							<a href="#">课程4</a>
+							<a href="/courses">课程设置</a>
+						</li>
+						<li>
+							<a href="/resource">资料分享</a>
+						</li>
+						<li>
+							<a href="/enroll">在线报名</a>
 						</li>
 					</ul>
 				</div>
 				<div class="col-sm-2">
-					<h5>资料分享</h5>
+					<h5>
+						相关文件
+					</h5>
 					<ul>
 						<li>
-							<a href="#">PTE技巧</a>
+							<a href="">服务条款</a>
 						</li>
 						<li>
-							<a href="#">PTE真题</a>
+							<a href="">开源协议</a>
 						</li>
 					</ul>
 				</div>
 				<div class="col-sm-2">
-					<h5>联系我们</h5>
+					<h5>
+						联系方式
+					</h5>
 					<ul>
 						<li>
-							<a href="#">Email : xxx@xxx.xxxx</a>
+							<a href="#">Email : info@unitoppte.com.au</a>
 						</li>
 						<li>
 							<a href="#">Phone: 02 1234 1234</a>
@@ -113,9 +126,9 @@
 			</div>
 		</div>
 		<div class="footer-copyright">
-			<p>© 2016 Copyright Text </p>
+			<p>© 2017 Copyright Unitop PTE </p>
 		</div>
-		
+
 	</footer>
 
 	<script src="/js/jquery/jquery-2.1.4.min.js"></script>
@@ -126,8 +139,8 @@
 	<script src="/js/ct-paper-radio.js"></script>
 	<script src="/js/bootstrap-select.js"></script>
 	<script src="/js/bootstrap-datepicker.js"></script>
-	
-	<script src="assets/js/ct-paper.js"></script>    
+
+	<script src="/js/ct-paper.js"></script>
 	<script src="/js/page/{{ section }}.js"></script>
 
 </body>

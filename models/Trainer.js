@@ -11,7 +11,8 @@ var Trainer = new keystone.List('Trainer', {
 	nocreate: false,
 	noedit: false,
         nodelete: false,
-        hidden: false
+        hidden: false,
+        label: 'PTE教师'
 });
 
 Trainer.add({

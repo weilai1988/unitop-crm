@@ -9,6 +9,7 @@ var Types = keystone.Field.Types;
 var Enrolment = new keystone.List('Enrolment', {
 	nocreate: true,
 	noedit: true,
+	label: '在线报名'
 });
 
 Enrolment.add({

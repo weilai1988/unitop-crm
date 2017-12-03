@@ -11,7 +11,8 @@ var Newscast = new keystone.List('Newscast', {
     nocreate: false,
     noedit: false,
     nodelete: false,
-    hidden: false
+    hidden: false,
+    label: 'PTE时讯'
 });
 
 Newscast.add({

@@ -25,7 +25,7 @@ exports.initLocals = function (req, res, next) {
 		{ label: '联系我们', key: 'contact', href: '/contact' },
 		{ label: '课程设置', key: 'courses', href: '/courses' },
 		{ label: '资料分享', key: 'resource', href: '/resource' },
-		{ label: '在线表单', key: 'enroll', href: '/enroll' },
+		{ label: '在线报名', key: 'enroll', href: '/enroll' },
 	];
 	res.locals.user = req.user;
 	next();

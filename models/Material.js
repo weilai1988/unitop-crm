@@ -11,7 +11,8 @@ var Material = new keystone.List('Material', {
     nocreate: false,
     noedit: false,
     nodelete: false,
-    hidden: false
+    hidden: false,
+    label: '学习资料'
 });
 
 Material.add({

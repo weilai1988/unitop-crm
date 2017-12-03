@@ -11,7 +11,8 @@ var Experience = new keystone.List('Experience', {
 	nocreate: false,
 	noedit: false,
     nodelete: false,
-    hidden: false
+    hidden: false,
+    label: '经验分享'
 });
 
 Experience.add({

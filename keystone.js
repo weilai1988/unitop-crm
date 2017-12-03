@@ -11,8 +11,8 @@ var handlebars = require('express-handlebars');
 // and documentation.
 
 keystone.init({
-	'name': 'unitop-crm',
-	'brand': 'unitop-crm',
+	'name': 'UNITOP PTE',
+	'brand': 'UNITOP PTE',
 
 	'sass': 'public',
 	'static': 'public',
@@ -68,12 +68,12 @@ keystone.set('routes', require('./routes'));
 
 // Configure the navigation bar in Keystone's Admin UI
 keystone.set('nav', {
-	galleries: 'galleries',
-	enquiries: 'enquiries',
-	courses: 'courses',
-	trainers: 'trainers',
-	newscast: 'newscasts',
-	users: 'users',
+	'主页信息': 'newscasts',
+	'课程设置': 'courses',
+	'资料分享': ['materials', 'experiences'],
+	'关于我们': ['trainers'],
+	'在线报名': ['enrolments'],
+	'管理员功能': 'users',
 });
 
 // Start Keystone to connect to your database and initialise the web server
