@@ -22,12 +22,15 @@
                             {{#each materials}}
                             <div class="col-md-4">
                                 <div class="thumbnail">
-                                    <img alt="Bootstrap Thumbnail First" src="http://placehold.it/600x200" />
+                                    <div style="height:200px;overflow:hidden;">
+                                        <img style="width:100%;" src="{{featuredImage.secure_url}}" />
+                                    </div>
+                                    
                                     <div class="caption">
-                                        <h3>
+                                        <h3 style="height:100px">
                                             {{ title }}
                                         </h3>
-                                        <p>
+                                        <p style="height:150px">
                                             {{ summary }}
                                         </p>
                                         <p>
@@ -49,12 +52,12 @@
                             {{#each experiences}}
                             <div class="col-md-4">
                                 <div class="thumbnail">
-                                    <img alt="Bootstrap Thumbnail First" src="http://placehold.it/600x200" />
+                                    <img style="height:200px;width:auto;" src="{{featuredImage.secure_url}}" />
                                     <div class="caption">
-                                        <h3>
+                                        <h3 style="height:100px">
                                             {{ title }}
                                         </h3>
-                                        <p>
+                                        <p style="height:150px">
                                             {{ summary }}
                                         </p>
                                         <p>
