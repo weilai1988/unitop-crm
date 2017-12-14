@@ -18,9 +18,10 @@
 
 .main-carousel img {
   display: block;
-  height: 500px;
+//   height: 500px;
+    width: 100%;
   @media screen and ( min-width: 768px ) {
-      height: 750px;
+    //   height: 750px;
   }
 }
 
