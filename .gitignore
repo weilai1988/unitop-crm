@@ -1,12 +1,6 @@
 # Logs
 logs
 *.log
-<<<<<<< HEAD
-=======
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
->>>>>>> 24da57cb5bee301fac4cba68d89dd1c4da98a7ee
 
 # Runtime data
 pids
@@ -77,3 +71,4 @@ typings/
 .env
 
 public/styles/site.css
+public/styles/theme.css
