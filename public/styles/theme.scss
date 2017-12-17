@@ -6,3 +6,15 @@
 .navbar-default .navbar-nav > li > a:not(.btn) {
     color: white;
 }
+
+.panel-primary > .panel-heading {
+    color: #fff;
+    background-color: #131231;
+    border-color: #131231;
+}
+
+.list-group-item.active {
+    color: #fff;
+    background-color: #131231;
+    border-color: #131231;
+}

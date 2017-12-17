@@ -9,7 +9,7 @@
 
 exports.create = {
 	User: [
-		{ 'name.first': 'Admin', 'name.last': 'User', 'email': 'admin@unitoppte.com', 'password': 'unitoppte', 'isAdmin': true },
+		{ 'name.first': 'Admin', 'name.last': 'User', 'email': 'admin@unitoppte.com.au', 'password': 'unitoppte', 'isAdmin': true },
 	],
 };
 
