@@ -43,8 +43,12 @@ keystone.init({
 	},
 
 	'cookie secret': 'unitop',
+	'mongo': 'mongodb://unitoppte.com.au/unitop-crm',
 
-	'mongo': 'mongodb://unitoppte.com.au/unitop-crm'
+	'wysiwyg additional options': { 'external_plugins': { 'uploadimage': '/js/uploadimage/plugin.min.js' } },
+	// 'wysiwyg additional plugins': 'images',
+	// 'wysiwyg images': true,
+	'wysiwyg cloudinary images': true
 
 
 });
