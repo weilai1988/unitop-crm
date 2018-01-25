@@ -43,21 +43,23 @@
 	<div class="row">
 
 		{{#each courses}}
-		<div class="col-md-3">
-			<div class="panel panel-primary">
-				<div class="panel-heading">
-					<h3 class="panel-title">
-						{{ name }}
-					</h3>
+			{{#if featured}}
+				<div class="col-md-3">
+					<div class="panel panel-primary">
+						<div class="panel-heading">
+							<h3 class="panel-title">
+								{{ name }}
+							</h3>
+						</div>
+						<div class="panel-body">
+							{{ summary }}
+						</div>
+						<div class="panel-footer">
+							<a href="/courses/{{key}}">了解更多</a>
+						</div>
+					</div>
 				</div>
-				<div class="panel-body">
-					{{ summary }}
-				</div>
-				<div class="panel-footer">
-					<a href="/courses/{{key}}">了解更多</a>
-				</div>
-			</div>
-		</div>
+			{{/if}}
 		{{/each}}
 
 	</div>
