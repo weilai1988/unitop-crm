@@ -7,6 +7,16 @@
     color: white;
 }
 
+.navbar-default .container-fluid {
+    padding-left: 0;
+    .navbar-header {
+        background: white;
+        height: 75px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
 .panel-primary > .panel-heading {
     color: #fff;
     background-color: #131231;
@@ -17,4 +27,28 @@
     color: #fff;
     background-color: #131231;
     border-color: #131231;
+}
+
+ul.nav .active {
+    border-bottom: white 2px solid;
+}
+
+hr {
+    border: 0;
+    margin: 1.35em auto;
+    max-width: 100%;
+    background-position: 50%;
+    box-sizing: border-box;
+
+
+    height: 10px;
+    background-image: linear-gradient(45deg,
+      hsla(0, 0%, 5%, 0),
+      hsla(0, 0%, 5%, 0) 33.33%,
+      hsla(0, 0%, 5%, 1) 33.33%,
+      hsla(0, 0%, 5%, 1) 66.67%,
+      hsla(0, 0%, 5%, 0) 66.67%,
+      hsla(0, 0%, 5%, 0) 100%);
+    background-size: 10px 100%;
+    width: 250px;
 }
